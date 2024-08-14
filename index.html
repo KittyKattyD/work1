@@ -110,6 +110,29 @@
             .trending-items-shell {
                 display: flex;
                 gap: 15px;
+                width: 100%;
+            }
+            .trending-items-body{
+                width: 23%;
+                background-color: #fff;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                /* padding-bottom: 22px;
+                margin-bottom: 10px;
+                transition: all 0.5s ease; */
+                border-radius: 10px;
+                box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
+            }
+            .trending-items-images{
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .trending-items-images img{
+                transform: scale(1);
+                border-radius: 10px;
+                width: 100%;
+                transition: all 0.5s ease;
             }
         </style>
     </head>
@@ -142,7 +165,11 @@
             <div class="trending-items-container">
                 <h2 class="trending-items-title">Послуги</h2>
                 <div class="trending-items-shell">
-
+                    <div class="trending-items-body">
+                        <div class="trending-items-images">
+                            <img src="images/gallery/5-gallery.jpg" alt="trending">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
