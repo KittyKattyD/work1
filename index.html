@@ -231,6 +231,65 @@
                 object-fit: cover;
                 height: 300px;
             }
+            .blog-meta2{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                background-color: rgba(15, 107, 172, 0.8509803922);
+                text-align: center;
+                padding: 10px;
+                border-radius: 6px;
+                margin-bottom: 0;
+            }
+            .blog-meta2 span{
+                display: block;
+                color: #fff;
+            }
+            .day{
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+            }
+            .month{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            .spotlight-stories-blog-content{
+                padding: 30px;
+                border-radius: 6px;
+            }
+            .blog-meta-user-com{
+                /* background-color: transparent;
+                text-align: center;
+                border-radius: 6px;
+                margin-bottom: 15px;
+                font-size: 14px;
+                line-height: 28px;
+                font-weight: 400;
+                display: inline-block;
+                position: relative; */
+                display: flex;
+                gap: 15px;
+                text-align: center;
+                justify-content: start;
+                align-items: center;
+            }
+            .blog-meta-user-com svg{
+                width: 20px;
+                height: 20px;
+            }
+            .user{
+                font-size: 14px;
+            }
+            .spotlight-stories-blog-title{
+                margin: 0;
+                font-size: 16px;
+                color: #0F6CAE;
+                line-height: 1.25;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
         </style>
     </head>
     <body>
@@ -352,7 +411,21 @@
                     <div class="spotlight-stories-blog">
                         <div class="spotlight-stories-blog-image">
                             <img src="images/gallery/1-gallery.jpg" alt="stories-blog">
+                            <div class="blog-meta2">
+                                <span class="day">15</span>
+                                <span class="month">August</span>
+                            </div>
                         </div>
+                        <div class="spotlight-stories-blog-content">
+                            <div class="blog-meta-user-com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <p class="user">Lorem Lorem</p>
+                            </div>
+                            <a href="">
+                                <h3 class="spotlight-stories-blog-title">Создание интернет портала</h3>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
