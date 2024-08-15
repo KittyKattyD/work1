@@ -381,6 +381,55 @@
                 margin: 0 auto;
                 background-color: #021420;
             }
+            .some-data-list{
+                display: flex;
+                gap: 15px;
+                padding: 37px 29px;
+                color: #fff;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                width: 23%;
+            }
+            .some-data-list-item{
+                display: flex;
+                flex-direction: column;
+            }
+            .media-icon-first{
+                margin-bottom: 20px;
+                position: relative;
+            }
+            .media-icon-first img{
+                animation-name: spin;
+                animation-duration: 12000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes spin {
+                100% {
+                    transform: rotate(360deg);
+            }
+            }
+            .icon-second{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100px;
+                height: 100px;
+            }
+            .icon-second img:not([draggable]){
+                max-width: 100%;
+                height: auto;
+            }
+            .some-data-content{
+                text-align: center;
+                font-size: 36px;
+                font-weight: 700;
+            }
+            .some-data-content p{
+                font-size: 20px;
+            }
         </style>
     </head>
     <body>
@@ -610,7 +659,20 @@
         </section>
         <section class="some-data-numbers">
             <div class="some-data-numbers-container">
-
+                <div class="some-data-list">
+                    <div class="some-data-list-item">
+                        <div class="media-icon-first">
+                            <img src="images/counter-bg.png" alt="counter">
+                            <div class="icon-second">
+                                <img src="images/icon/0.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="some-data-content">
+                            <span>+3257</span>
+                            <p>Закриті питання</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
