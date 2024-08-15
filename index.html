@@ -125,15 +125,19 @@
                 border-radius: 10px;
                 box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
             }
+            .trending-items-body:hover{
+                background-color: #0F6CAE;
+            }
             .trending-items-images{
                 overflow: hidden;
                 border-radius: 10px;
             }
             .trending-items-images img{
-                object-fit: contain;
+                object-fit: cover;
                 transform: scale(1);
                 border-radius: 10px;
                 width: 100%;
+                height: 200px;
                 transition: all 0.5s ease;
             }
             .trending-body-icon{
@@ -165,14 +169,22 @@
                 margin-bottom: 15px;
                 padding: 15px;
             }
+            .trending-bottom:hover, .trending-link-btn:hover{
+                color: #fff;
+            }
             .trending-link-btn{
                 display: flex;
                 justify-content: center;
                 gap: 15px;
+                color: #0E68A8;
             }
             .trending-link-btn svg{
                 width: 20px;
                 height: 20px;
+            }
+            .trending-items-body:hover .trending-body-icon {
+                transform: scaleX(-1);
+                background-color: #0E68A8;
             }
         </style>
     </head>
@@ -219,6 +231,66 @@
                                 <h3 class="body-title">Создание интернет портала</h3>
                             </a>
                             <p class="trending-body-text">Интернет-портал — web-сайт, содержащий разнообразные интерактивные сервисы (поиск, почта, новости, форумы, обслуживание, голосование и др.), функционирующие в рамках...</p>
+                            <div class="trending-link-btn">
+                                <a href="">Читати Далі</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-items-body">
+                        <div class="trending-top">
+                            <div class="trending-items-images">
+                                <img src="images/gallery/6-gallery.jpg" alt="trending">
+                            </div>
+                            <div class="trending-body-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="trending-bottom">
+                            <a href="">
+                                <h3 class="body-title">Разработка CRM для интернет магазина и малого бизнеса</h3>
+                            </a>
+                            <p class="trending-body-text">Если вы хотите прокачать свой бизнес и начать новый этап в управлении командой, советуем узнать больше о CRM-системах. CRM-система расшифровывается как Customer Relationship...</p>
+                            <div class="trending-link-btn">
+                                <a href="">Читати Далі</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-items-body">
+                        <div class="trending-top">
+                            <div class="trending-items-images">
+                                <img src="images/gallery/4-gallery.jpg" alt="trending">
+                            </div>
+                            <div class="trending-body-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="trending-bottom">
+                            <a href="">
+                                <h3 class="body-title">Cоздание landing page (одностраничного сайта)</h3>
+                            </a>
+                            <p class="trending-body-text">Вы хотите получить результат от вложенных инвестиций как можно скорее?Тогда решение «Быстрый старт» от нашей команды идеально вам подходит. Опираясь на...</p>
+                            <div class="trending-link-btn">
+                                <a href="">Читати Далі</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-items-body">
+                        <div class="trending-top">
+                            <div class="trending-items-images">
+                                <img src="images/gallery/3-gallery.jpg" alt="trending">
+                            </div>
+                            <div class="trending-body-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="trending-bottom">
+                            <a href="">
+                                <h3 class="body-title">Создание корпоративного сайта для компании </h3>
+                            </a>
+                            <p class="trending-body-text">В связи с поголовным уходом потребителей в интернет, иметь собственное представительство в сети стало обязательным пунктом в списке «must have» для представителей... </p>
                             <div class="trending-link-btn">
                                 <a href="">Читати Далі</a>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
