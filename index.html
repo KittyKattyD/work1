@@ -383,13 +383,16 @@
             }
             .some-data-list{
                 display: flex;
-                gap: 15px;
-                padding: 37px 29px;
+                gap: 40px;
+                
                 color: #fff;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
-                width: 23%;
+                
+            }
+            .some-data-list-main{
+                padding: 37px 29px;
             }
             .some-data-list-item{
                 display: flex;
@@ -418,7 +421,7 @@
                 width: 100px;
                 height: 100px;
             }
-            .icon-second img:not([draggable]){
+            .icon-second img{
                 max-width: 100%;
                 height: auto;
             }
@@ -660,7 +663,8 @@
         <section class="some-data-numbers">
             <div class="some-data-numbers-container">
                 <div class="some-data-list">
-                    <div class="some-data-list-item">
+                    <div class="some-data-list-main">
+                        <div class="some-data-list-item">
                         <div class="media-icon-first">
                             <img src="images/counter-bg.png" alt="counter">
                             <div class="icon-second">
@@ -671,8 +675,24 @@
                             <span>+3257</span>
                             <p>Закриті питання</p>
                         </div>
+                        </div>
+                    </div>
+                    <div class="some-data-list-main">
+                        <div class="some-data-list-item">
+                        <div class="media-icon-first">
+                            <img src="images/counter-bg.png" alt="counter">
+                            <div class="icon-second">
+                                <img src="images/icon/0.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="some-data-content">
+                            <span>+28642</span>
+                            <p>Виконані запити</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
     </body>
