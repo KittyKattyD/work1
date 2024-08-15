@@ -455,15 +455,25 @@
                 font-weight: 600;
                 text-align: center;
             }
+            .why-choose-us-main{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
             .why-choose-accordion-item{
                 align-items: center;
-                justify-content: space-between;
                 background-color: #E4EEF4;
                 padding: 40px 60px;
                 border-radius: 100px;
                 position: relative;
                 overflow: hidden;
                 transition: all 0.5s ease;
+                display: flex;
+            }
+            .why-choose-us-text{
+                position: absolute;
+                left: 100px;
+                font-weight: 600;
             }
             .image-hover{
                 content: "";
@@ -481,6 +491,43 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
+            }
+            .why-choose-us-top{
+                /* display: flex;
+                align-items: center; */
+                width: 92%;
+                /* justify-content: space-between; */
+            }
+            .why-choose-us-left{
+                display: flex;
+                align-items: center;
+                z-index: 0;
+                position: relative;
+            }
+            .left-number{
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                display: inline-block;
+                background-color: #116DAE;
+                text-align: center;
+                color: #fbf8f8;
+                border-radius: 100%;
+                margin-right: 50px;
+                font-size: 24px;
+                font-weight: 600;
+                position: absolute;
+                left: 20px;
+                top: -70px;
+            }
+            .why-choose-accordion-item:hover .image-hover{
+                visibility: visible;
+                opacity: 0.9;
+                z-index: 0;
+            }
+            .why-choose-accordion-item:hover .why-choose-us-text{
+                color: #fff;
+                z-index: 1;
             }
         </style>
     </head>
@@ -776,11 +823,40 @@
         <section class="why-choose-us">
             <div class="why-choose-us-container">
                 <h2 class="why-choose-us-title">Кілька причин, чому ви звернули увагу на наш сайт:</h2>
-                <div class="why-choose-accordion-item">
+                <div class="why-choose-us-main">
+                    <div class="why-choose-us-wrapper">
+                    <div class="why-choose-accordion-item">
+                    <div class="why-choose-us-text">Ви розглядаєте можливість придбання ваших послуг</div>
                     <div class="background-image image-hover" style="background-image: url(images/bg/1_bg.jpg);"></div>
-                </div>
-                <div class="why-choose-us-top">
-
+                    </div>
+                    <div class="why-choose-us-top">
+                    <div class="why-choose-us-left">
+                        <span class="left-number">01</span>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="why-choose-us-wrapper">
+                    <div class="why-choose-accordion-item">
+                    <div class="why-choose-us-text">Вам важливо отримати максимальну ефективність від вкладених коштів, щоб кожна витрачена копійка приносила максимальну користь</div>
+                    <div class="background-image image-hover" style="background-image: url(images/bg/1_bg.jpg);"></div>
+                    </div>
+                    <div class="why-choose-us-top">
+                    <div class="why-choose-us-left">
+                        <span class="left-number">02</span>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="why-choose-us-wrapper">
+                    <div class="why-choose-accordion-item">
+                    <div class="why-choose-us-text">Вам потрібні топ-менеджери і швидка комунікація</div>
+                    <div class="background-image image-hover" style="background-image: url(images/bg/1_bg.jpg);"></div>
+                    </div>
+                    <div class="why-choose-us-top">
+                    <div class="why-choose-us-left">
+                        <span class="left-number">03</span>
+                    </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
