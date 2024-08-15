@@ -455,6 +455,33 @@
                 font-weight: 600;
                 text-align: center;
             }
+            .why-choose-accordion-item{
+                align-items: center;
+                justify-content: space-between;
+                background-color: #E4EEF4;
+                padding: 40px 60px;
+                border-radius: 100px;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.5s ease;
+            }
+            .image-hover{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+            .background-image{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
         </style>
     </head>
     <body>
@@ -749,6 +776,12 @@
         <section class="why-choose-us">
             <div class="why-choose-us-container">
                 <h2 class="why-choose-us-title">Кілька причин, чому ви звернули увагу на наш сайт:</h2>
+                <div class="why-choose-accordion-item">
+                    <div class="background-image image-hover" style="background-image: url(images/bg/1_bg.jpg);"></div>
+                </div>
+                <div class="why-choose-us-top">
+
+                </div>
             </div>
         </section>
     </body>
