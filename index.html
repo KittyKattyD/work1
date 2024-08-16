@@ -103,12 +103,14 @@
             }
             .trending-items-title{
                 font-size: 46px;
-                margin: 50px;
+                margin-bottom: 50px;
                 text-transform: capitalize;
                 text-align: center;
             }
             .trending-items-shell {
                 display: flex;
+                flex-direction: row;
+                align-items: baseline;
                 gap: 15px;
                 width: 100%;
                 justify-content: center;
@@ -140,18 +142,19 @@
             .trending-body-icon{
                 width: 70px;
                 height: 70px;
-                background-color: #fff;
+                background: #0E68A8;
                 border-radius: 50%;
-                /* position: relative;
-                z-index: 1; */
                 margin: -40px auto 15px auto;
                 box-shadow: 0.5px 0.87px 27px rgba(35, 31, 32, 0.04);
                 transform: scaleX(1);
                 transition: all 0.5s ease;
             }
             .trending-body-icon svg{
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
+            }
+            .trending-body-icon svg:hover {
+                fill: #000;
             }
             .body-title{
                 font-size: 15px;
@@ -161,7 +164,9 @@
             }
             .trending-body-text{
                 font-size: 12px;
-                margin-bottom: 15px;
+                /* margin-bottom: 15px; */
+            }
+            .trending-bottom{
                 padding: 15px;
             }
             .trending-bottom:hover, .trending-link-btn:hover{
@@ -179,10 +184,7 @@
             }
             .trending-items-body:hover .trending-body-icon {
                 transform: scaleX(-1);
-                background-color: #0E68A8;
-            }
-            .trending-items-body:nth-child(2n+1) {
-                margin-top: 30px;
+                background-color: #fff;
             }
             /*----------------------------*/
             .spotlight-stories{
@@ -203,24 +205,24 @@
             }
             .spotlight-stories-shell{
                 display: flex;
+                flex-direction: row;
+                align-items: baseline;
                 gap: 30px;
                 width: 100%;
                 justify-content: center;
             }
             .spotlight-stories-blog{
-                width: 30%;
+                width: 23%;
                 background-color: #fff;
                 border-radius: 6px;
                 transition: all 0.5s ease;
-                /* margin-bottom: 8px; */
                 display: flex;
                 flex-direction: column;
                 box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
             }
             .spotlight-stories-blog-image{
                 position: relative;
-                /* margin-bottom: 0;
-                overflow: hidden; */
+                overflow: hidden;
                 border-radius: 6px;
                 width: 100%;
             }
@@ -241,7 +243,6 @@
                 text-align: center;
                 padding: 10px;
                 border-radius: 6px;
-                /* margin-bottom: 0; */
             }
             .blog-meta2 span{
                 display: block;
@@ -260,6 +261,8 @@
             .spotlight-stories-blog-content{
                 padding: 30px;
                 border-radius: 6px;
+                display: flex;
+                flex-direction: column-reverse;
             }
             .blog-meta-user-com{
                 display: flex;
@@ -267,12 +270,14 @@
                 text-align: center;
                 justify-content: start;
                 align-items: center;
-                background-color: #0E68A8;
+                background-color: #063150;
                 border-radius: 6px;
+                color: #646464;
             }
             .blog-meta-user-com svg{
                 width: 20px;
                 height: 20px;
+                fill: #646464;
             }
             .user{
                 font-size: 14px;
@@ -314,6 +319,8 @@
             }
             .our-accomplishments-shell{
                 display: flex;
+                flex-direction: row;
+                align-items: baseline;
                 gap: 10px;
                 width: 100%;
                 justify-content: center;
@@ -325,23 +332,19 @@
                 box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.0509803922);
                 padding-bottom: 22px;
                 border-radius: 10px;
-                /* position: relative;
-                overflow: hidden; */
                 transition: all 0.5s ease;
             }
             .our-accomplishments-body-image{
                 overflow: hidden;
                 border-radius: 10px;
-                /* display: block; */
-                transform: all 0.5s ease;
             }
             .our-accomplishments-body-image img{
                 transform: scale(1);
                 border-radius: 10px;
                 width: 100%;
-                transition: all 0.5s ease;
                 height: 200px;
                 object-fit: contain;
+                object-fit: cover;
             }
             .our-accomplishments-body-icon{
                 width: 90px;
@@ -354,7 +357,6 @@
                 margin: -50px auto 8px auto;
                 box-shadow: 0.5px 0.87px 27px rgba(35, 31, 32, 0.04);
                 border: 10px solid #35ACDF;
-                transition: all 0.5s ease;
             }
             .our-accomplishments-body-icon img{
                 width: 70px;
@@ -367,19 +369,21 @@
             }
             .our-accomplishments-body:hover {
                 color: #fff;
-                transform: translate(-10%, -10%);
+                transform: translate(-5%, -5%);
                 background-color: #0E68A8;
             }
             /*------------------------*/
             .some-data-numbers {
                 padding: 80px 0;
             }
+            .first-wrapper{
+                background-color: #021420;
+            }
             .some-data-numbers-container {
                 max-width: 1310px;
                 width: 100%;
                 padding: 0 16px;
                 margin: 0 auto;
-                background-color: #021420;
             }
             .some-data-title{
                 margin-bottom: 50px;
@@ -390,23 +394,23 @@
             }
             .some-data-list{
                 display: flex;
+                flex-direction: row;
+                align-items: baseline;
                 gap: 70px;
                 color: #fff;
                 text-align: center;
                 justify-content: center;
-                align-items: center;
-                
+                align-items: center;    
             }
-            .some-data-list-main{
+            /* .some-data-list-main{
                 padding: 37px 29px;
-            }
+            } */
             .some-data-list-item{
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
             }
             .media-icon-first{
-                /* margin-bottom: 20px; */
                 position: relative;
             }
             .media-icon-first img{
@@ -463,6 +467,7 @@
             }
             .why-choose-us-wrapper{
                 width: 95%;
+                margin: auto;
             }
             .why-choose-accordion-item{
                 align-items: center;
@@ -563,11 +568,11 @@
                             <div class="trending-items-images">
                                 <img src="images/gallery/5-gallery.jpg" alt="trending">
                             </div>
-                            <div class="trending-body-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
-                            </div>
                         </div>
                         <div class="trending-bottom">
+                            <div class="trending-body-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
+                            </div>
                             <a href="">
                                 <h3 class="body-title">Создание интернет портала</h3>
                             </a>
@@ -583,11 +588,11 @@
                             <div class="trending-items-images">
                                 <img src="images/gallery/6-gallery.jpg" alt="trending">
                             </div>
-                            <div class="trending-body-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
-                            </div>
                         </div>
                         <div class="trending-bottom">
+                            <div class="trending-body-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
+                            </div>
                             <a href="">
                                 <h3 class="body-title">Разработка CRM для интернет магазина и малого бизнеса</h3>
                             </a>
@@ -603,11 +608,11 @@
                             <div class="trending-items-images">
                                 <img src="images/gallery/4-gallery.jpg" alt="trending">
                             </div>
-                            <div class="trending-body-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
-                            </div>
                         </div>
                         <div class="trending-bottom">
+                            <div class="trending-body-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
+                            </div>
                             <a href="">
                                 <h3 class="body-title">Cоздание landing page (одностраничного сайта)</h3>
                             </a>
@@ -623,11 +628,11 @@
                             <div class="trending-items-images">
                                 <img src="images/gallery/3-gallery.jpg" alt="trending">
                             </div>
-                            <div class="trending-body-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
-                            </div>
                         </div>
                         <div class="trending-bottom">
+                            <div class="trending-body-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M15.3709 3.44L18.5819 9.002L22.0049 9.00218V11.0022L20.8379 11.002L20.0813 20.0852C20.0381 20.6035 19.6048 21.0022 19.0847 21.0022H4.92502C4.40493 21.0022 3.97166 20.6035 3.92847 20.0852L3.17088 11.002L2.00488 11.0022V9.00218L5.42688 9.002L8.63886 3.44L10.3709 4.44L7.73688 9.002H16.2719L13.6389 4.44L15.3709 3.44ZM13.0049 13.0022H11.0049V17.0022H13.0049V13.0022ZM9.00488 13.0022H7.00488V17.0022H9.00488V13.0022ZM17.0049 13.0022H15.0049V17.0022H17.0049V13.0022Z"></path></svg>
+                            </div>
                             <a href="">
                                 <h3 class="body-title">Создание корпоративного сайта для компании </h3>
                             </a>
@@ -655,14 +660,16 @@
                         </div>
                         <div class="spotlight-stories-blog-content">
                             <div class="blog-meta-user-com">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                 <p class="user">Lorem Lorem</p>
                             </div>
+                            <div>
                             <a href="">
                                 <h3 class="spotlight-stories-blog-title">Создание интернет портала</h3>
                             </a>
                             <p class="spotlight-stories-blog-text">Интернет-портал — web-сайт, содержащий разнообразные интерактивные сервисы (поиск, почта, новости, форумы, обслуживание, голосование и др.), функционирующие в рамках... </p>
                             <a href="" class="blog-link-btn"> Читати Далі</a>
+                        </div>
                         </div>
 
                     </div>
@@ -679,11 +686,13 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                 <p class="user">Lorem Lorem</p>
                             </div>
+                            <div>
                             <a href="">
                                 <h3 class="spotlight-stories-blog-title">Разработка CRM для интернет магазина и малого бизнеса</h3>
                             </a>
                             <p class="spotlight-stories-blog-text">Если вы хотите прокачать свой бизнес и начать новый этап в управлении командой, советуем узнать больше о CRM-системах. CRM-система расшифровывается как Customer Relationship... </p>
                             <a href="" class="blog-link-btn"> Читати Далі</a>
+                        </div>
                         </div>
 
                     </div>
@@ -700,11 +709,36 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                 <p class="user">Lorem Lorem</p>
                             </div>
+                            <div>
                             <a href="">
                                 <h3 class="spotlight-stories-blog-title">Cоздание landing page (одностраничного сайта)</h3>
                             </a>
                             <p class="spotlight-stories-blog-text">Вы хотите получить результат от вложенных инвестиций как можно скорее?Тогда решение «Быстрый старт» от нашей команды идеально вам подходит. Опираясь на... </p>
                             <a href="" class="blog-link-btn"> Читати Далі</a>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="spotlight-stories-blog">
+                        <div class="spotlight-stories-blog-image">
+                            <img src="images/gallery/0-gallery.jpg" alt="stories-blog">
+                            <div class="blog-meta2">
+                                <span class="day">15</span>
+                                <span class="month">August</span>
+                            </div>
+                        </div>
+                        <div class="spotlight-stories-blog-content">
+                            <div class="blog-meta-user-com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <p class="user">Lorem Lorem</p>
+                            </div>
+                            <div>
+                            <a href="">
+                                <h3 class="spotlight-stories-blog-title">Разработка CRM для интернет магазина и малого бизнеса</h3>
+                            </a>
+                            <p class="spotlight-stories-blog-text">Если вы хотите прокачать свой бизнес и начать новый этап в управлении командой, советуем узнать больше о CRM-системах. CRM-система расшифровывается как Customer Relationship... </p>
+                            <a href="" class="blog-link-btn"> Читати Далі</a>
+                        </div>
                         </div>
 
                     </div>
@@ -756,6 +790,7 @@
         </section>
         <section class="some-data-numbers">
             <h2 class="some-data-title">трохи статистики</h2>
+            <div class="first-wrapper">
             <div class="some-data-numbers-container">
                 <div class="some-data-list">
                     <div class="some-data-list-main">
@@ -817,16 +852,17 @@
                 </div>
                 
             </div>
+        </div>
         </section>
         <section class="why-choose-us">
             <div class="why-choose-us-container">
                 <h2 class="why-choose-us-title">Кілька причин, чому ви звернули увагу на наш сайт:</h2>
                 <div class="why-choose-us-main">
                     <div class="why-choose-us-wrapper">
-                    <div class="why-choose-accordion-item">
-                    <div class="why-choose-us-text">Ви розглядаєте можливість придбання ваших послуг</div>
-                    <div class="background-image image-hover" style="background-image: url(images/bg/1_bg.jpg);"></div>
-                    </div>
+                        <div class="why-choose-accordion-item">
+                            <div class="why-choose-us-text">Ви розглядаєте можливість придбання ваших послуг</div>
+                            <div class="background-image image-hover" style="background-image: url(images/bg/1_bg.jpg);"></div>
+                        </div>
                     
                     <div class="why-choose-us-left">
                         <span class="left-number">01</span>
