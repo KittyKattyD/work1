@@ -518,6 +518,7 @@
                 z-index: 1;
                 color: #fff;
              }
+            /*-----------------------*/
             .our-mission{
                 padding: 80px 0;
             }
@@ -564,14 +565,13 @@
                 animation: sectionLine 5s linear infinite;
             }
             @keyframes sectionLine{
-  0%{
-    left: -60px;
-  }
-  100%{
-    left: 100%;
-  }
-}
-
+                0%{
+                    left: -60px;
+                }
+                100%{
+                    left: 100%;
+                }
+            }
             .our-mission-wrapper{
                 display: flex;
                 flex-direction: row;
@@ -579,10 +579,93 @@
                 justify-content: center;
                 text-align: center;
                 align-items: center;
+                width: 100%;
             }
             .our-mission-text{
                 font-size: 15px;
                 line-height: 1.5;
+                width: 55%;
+            }
+            .our-mission-content-images1{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 40%;
+            }
+            .our-mission-pic{
+                border-radius: 0px;
+                overflow: hidden;
+                width: max-content;
+                max-width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+            .our-mission-pic img{
+                border-radius: 0;
+                height: 250px;
+                width: 100%;
+                object-fit: contain;
+                position: relative;
+                overflow: hidden;
+                transition: all 2s ease;
+                transform: scale(1);
+            }
+            .our-mission-pic::before{
+                top: 0;
+                right: 51%;
+                bottom: 0;
+                left: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                content: "";
+                position: absolute;
+                pointer-events: none;
+                opacity: 1;
+                z-index: 3;
+                transform: rotate(5deg);
+            }
+            .our-mission-pic::after{
+                top: 50%;
+                right: 0;
+                bottom: 50%;
+                left: 0;
+                background: rgba(255, 255, 255, 0.6);
+                content: "";
+                position: absolute;
+                pointer-events: none;
+                opacity: 1;
+                z-index: 3;
+                transform: rotate(5deg);
+            }
+            .our-mission-content-images2{
+                right: 35px;
+                z-index: 0;
+                margin: -62px 0 0 auto;
+            }
+            .our-mission-box{
+                background-color: #34ADE1;
+                position: absolute;
+                right: 10px;
+                top: 20px;
+                padding: 35px 20px;
+                border-radius: 10px;
+                z-index: 1;
+            }
+            .our-mission-box:last-child{
+                top: auto;
+                right: auto;
+                left: 20px;
+                bottom: 20px;
+            }
+            .our-mission-box-title{
+                color: #fdfbfb;
+                margin: 0;
+                font-size: 34px;
+            }
+            .box-text{
+                color: #fffdfd;
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0;
             }
         </style>
     </head>
@@ -951,7 +1034,25 @@
                             
                             Ми надаємо комплексні рішення для галузі, включаючи автоматизацію процесів, системи моніторингу та управління, а також продукти для підвищення ефективності виробництва. Наша мета – підтримувати та розвивати галузь, надаючи інноваційні та надійні продукти. CompanyName орієнтований на підвищення продуктивності та полегшення повсякденного життя.</p>
                     </div>
-
+                    <div class="our-mission-content-images1">
+                        <div class="our-mission-pic">
+                            <img src="images/gallery/6-gallery.jpg" alt="picture">
+                        </div>
+                        <div class="our-mission-content-images2">
+                            <div class="our-mission-pic">
+                                <img src="images/gallery/9-gallery.jpg" alt="picture">
+                            </div>
+                        </div>
+                        <div class="our-mission-box">
+                            <h4 class="our-mission-box-title">Lorem</h4>
+                            <p class="box-text">Lorem lorem</p>
+                        </div>
+                        <div class="our-mission-box">
+                            <h4 class="our-mission-box-title">Lorem</h4>
+                            <p class="box-text">Lorem lorem</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
