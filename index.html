@@ -518,6 +518,72 @@
                 z-index: 1;
                 color: #fff;
              }
+            .our-mission{
+                padding: 80px 0;
+            }
+            .our-mission-container{
+                max-width: 1310px;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0 auto;
+            }
+            .our-mission-title{
+                margin-bottom: 20px;
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
+            }
+            .sec-line{
+                max-width: 200px;
+                height: 8px;
+                position: relative;
+                margin: 0 auto 30px;
+                overflow: hidden;
+            }
+            .sec-line::before {
+                content: "";
+                height: 4px;
+                width: 100%;
+                border-radius: 30px;
+                background-color: #35ADE1;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .sec-line::after {
+                content: "";
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                width: 60px;
+                transform: translateY(-50%);
+                height: 8px;
+                border-radius: 30px;
+                background-color: #0E66A4;
+                animation: sectionLine 5s linear infinite;
+            }
+            @keyframes sectionLine{
+  0%{
+    left: -60px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+            .our-mission-wrapper{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+            .our-mission-text{
+                font-size: 15px;
+                line-height: 1.5;
+            }
         </style>
     </head>
     <body>
@@ -868,6 +934,24 @@
                     </div>
                    
                    
+                </div>
+            </div>
+        </section>
+        <section class="our-mission">
+            <div class="our-mission-container">
+                <h2 class="our-mission-title">Про нас</h2>
+                <div class="sec-line"></div>
+                <div class="our-mission-wrapper">
+                    <div class="our-mission-text">
+                        <p>У нашому прагненні впроваджувати інновації та покращувати якість життя, CompanyName пропонує широкий спектр послуг, спрямованих на вирішення різноманітних проблем. Наша місія – зробити життя простішим, безпечнішим та комфортнішим за допомогою передових технологій та розумних рішень.
+
+                            Як стартап, орієнтований на розробку інноваційних рішень, ми працюємо над створенням продуктів, які передбачають потреби майбутнього. Від здоров'я та благополуччя до ефективності роботи та навчання, наші рішення розроблені, щоб покращити кожен аспект вашого життя. Ми віримо в силу інновацій для створення кращого майбутнього. Як сімейний бізнес з багатою історією, CompanyName цінує традиції та відданість високим стандартам обслуговування.
+                            
+                            Ми поєднуємо мудрість поколінь з сучасними технологіями, щоб запропонувати нашим клієнтам щось по-справжньому унікальне і цінне. Наш підхід до бізнесу – це гармонія минулого і майбутнього, де кожен клієнт стає частиною нашої великої родини. Як провідний постачальник промислових рішень, CompanyName пишається своєю бездоганною репутацією якості та надійності.
+                            
+                            Ми надаємо комплексні рішення для галузі, включаючи автоматизацію процесів, системи моніторингу та управління, а також продукти для підвищення ефективності виробництва. Наша мета – підтримувати та розвивати галузь, надаючи інноваційні та надійні продукти. CompanyName орієнтований на підвищення продуктивності та полегшення повсякденного життя.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
