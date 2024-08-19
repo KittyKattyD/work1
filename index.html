@@ -667,6 +667,54 @@
                 font-weight: 400;
                 margin: 0;
             }
+            /*------------------*/
+            .inside-our-company{
+                padding: 80px 0;
+            }
+            .inside-our-company-container{
+                max-width: 1310px;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+            }
+            .inside-our-company-shell{
+                display: flex;
+                flex-direction: column;
+            }
+            .inside-our-company-team{
+                display: flex;
+                align-items: flex-start;
+                margin: 0 0 18px 15px;
+            }
+            .inside-our-company-team-pic{
+            position: relative;
+            z-index: 2;
+            width: 300px;
+            }
+            .inside-our-company-team-pic img{
+                width: 100%;
+                border-radius: 50%;
+            }
+            .inside-our-company-team-pic::before{
+                content: "";
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                bottom: -15px;
+                left: -15px;
+                border: 30px solid #35AADD;
+                border-radius: 50%;
+                z-index: 1;
+                clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
+                transform: rotate(50deg);
+                pointer-events: none;
+                transition: all ease 0.4s;
+            }
+           .inside-our-company-team-content{
+
+           }
         </style>
     </head>
     <body>
@@ -1053,6 +1101,21 @@
                         </div>
                     </div>
                     
+                </div>
+            </div>
+        </section>
+        <section class="inside-our-company">
+            <div class="inside-our-company-container">
+                <h2 class="inside-our-company-title"></h2>
+                <div class="inside-our-company-shell">
+                    <div class="inside-our-company-team">
+                        <div class="inside-our-company-team-pic">
+                            <img src="images/avatar/m-1.jpg" alt="avatar">
+                        </div>
+                        <div class="inside-our-company-team-content">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
