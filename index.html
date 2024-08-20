@@ -676,10 +676,12 @@
                 width: 100%;
                 padding: 0 16px;
                 margin: 0 auto;
-               
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
             }
             .inside-our-company-title{
-                margin-bottom: 50px;
+                margin-bottom: 20px;
                 font-size: 36px;
                 font-weight: 600;
                 text-align: center;
@@ -687,7 +689,9 @@
             .inside-our-company-shell{
                 display: flex;
                 flex-direction: row;
-                width: 30%;
+                gap: 50px;
+                justify-content: center;
+                align-items: center;
             }
             .inside-our-company-team{
                 display: flex;
@@ -696,6 +700,7 @@
                 background-color: #f5f6f7;
                 border-radius: 40% 10% 10% 30%;
                 gap: 20px;
+                width: 40%;
                 /* margin: 0 0 18px 15px; */
             }
             .inside-our-company-team-pic{
@@ -706,6 +711,7 @@
             .inside-our-company-team-pic img{
                 width: 100%;
                 border-radius: 50%;
+                object-fit: contain;
             }
             .inside-our-company-team-pic::before{
                 content: "";
@@ -714,7 +720,7 @@
                 right: -15px;
                 bottom: -15px;
                 left: -15px;
-                border: 30px solid #35AADD;
+                border: 20px solid #35AADD;
                 border-radius: 50%;
                 z-index: 1;
                 clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
@@ -725,6 +731,7 @@
            .inside-our-company-team-content{
                 /* padding: 0 0 0 10px; */
                 padding: 25px 30px 30px 0;
+                text-align: center;
            }
            .inside-our-company-team-info{
                 /* position: relative;
@@ -743,7 +750,7 @@
                 border-radius: 0 30px 30px 0; */
            }
            .team-name{
-                font-size: 20px;
+                font-size: 24px;
                 font-weight: 700;
                 line-height: 133.333333%; /* 40/30 */
                 /* margin: 0 0 5px 0; */
@@ -757,7 +764,8 @@
                 transition: all ease 0.4s;
            }
            .team-information p{
-                font-size: 14px;
+                font-size: 18px;
+                margin: 5px 10px 5px 10px;
            }
            .team-information:hover{
             background-color: #0F6BAC;
@@ -1164,6 +1172,41 @@
                             <h3 class="team-name">Никита Михайлов</h3>
                             <div class="team-information">
                                 <p>Менеджер з розвитку бізнесу</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-our-company-team">
+                        <div class="inside-our-company-team-pic">
+                            <img src="images/avatar/m-1.jpg" alt="avatar">
+                        </div>
+                        <div class="inside-our-company-team-content">
+                            <h3 class="team-name">Дарина Лебедева</h3>
+                            <div class="team-information">
+                                <p>Менеджер зі зв'язків з інвесторами</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside-our-company-shell">
+                    <div class="inside-our-company-team">
+                        <div class="inside-our-company-team-pic">
+                            <img src="images/avatar/m-1.jpg" alt="avatar">
+                        </div>
+                        <div class="inside-our-company-team-content">
+                            <h3 class="team-name">Павел Пахомов </h3>
+                            <div class="team-information">
+                                <p>Заступник директора</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-our-company-team">
+                        <div class="inside-our-company-team-pic">
+                            <img src="images/avatar/m-1.jpg" alt="avatar">
+                        </div>
+                        <div class="inside-our-company-team-content">
+                            <h3 class="team-name">Варвара Мельникова</h3>
+                            <div class="team-information">
+                                <p>Начальник відділу закупівель</p>
                             </div>
                         </div>
                     </div>
