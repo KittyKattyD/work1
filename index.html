@@ -676,12 +676,17 @@
                 width: 100%;
                 padding: 0 16px;
                 margin: 0 auto;
-                display: flex;
-                flex-direction: row;
+               
+            }
+            .inside-our-company-title{
+                margin-bottom: 50px;
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
             }
             .inside-our-company-shell{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 width: 30%;
             }
             .inside-our-company-team{
@@ -741,7 +746,22 @@
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 133.333333%; /* 40/30 */
-                margin: 0 0 5px 0;
+                /* margin: 0 0 5px 0; */
+           }
+           .team-information{
+                display: inline-block;
+                font-weight: 700;
+                background-color: #ECF5FB;
+                color: #011031;
+                border-radius: 9999px;
+                transition: all ease 0.4s;
+           }
+           .team-information p{
+                font-size: 14px;
+           }
+           .team-information:hover{
+            background-color: #0F6BAC;
+            color: #fff;
            }
         </style>
     </head>
@@ -1134,14 +1154,17 @@
         </section>
         <section class="inside-our-company">
             <div class="inside-our-company-container">
-                <h2 class="inside-our-company-title"></h2>
+                <h2 class="inside-our-company-title">Наша команда</h2>
                 <div class="inside-our-company-shell">
                     <div class="inside-our-company-team">
                         <div class="inside-our-company-team-pic">
                             <img src="images/avatar/m-1.jpg" alt="avatar">
                         </div>
                         <div class="inside-our-company-team-content">
-                            <h3 class="team-name">Lorem Lorem</h3>
+                            <h3 class="team-name">Никита Михайлов</h3>
+                            <div class="team-information">
+                                <p>Менеджер з розвитку бізнесу</p>
+                            </div>
                         </div>
                     </div>
                 </div>
