@@ -853,13 +853,54 @@
                 border-radius: 6px;
             }
             .have-any-questions-title {
-                margin-bottom: 50px;
+                margin-bottom: 30px;
                 font-size: 36px;
                 font-weight: 600;
                 text-align: center;
             }
             .subtitle-text {
                 font-size: 16px;
+            }
+            .have-any-questions-contactform{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .contact-form{
+                margin-top: 29px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+            .contact-form-input{
+                height: 60px;
+                padding: 0 30px 0 28px;
+                border: 1px solid transparent;
+                color: #384c68;
+                background-color: #fff;
+                border-radius: 10px;
+                font-size: 14px;
+                width: 500px;
+            }
+            textarea{
+                height: 60px;
+                padding: 17px 30px 0 28px;
+                border: 1px solid transparent;
+                color: #384c68;
+                background-color: #fff;
+                border-radius: 10px;
+                font-size: 14px;
+                width: 500px;
+            }
+            .button-contact-form{
+                background-color: #37ACDF;
+                color: #fff;
+                font-weight: 700;
+                text-transform: capitalize;
+                font-size: 16px;
+                padding: 17.5px 28px;
+                border-radius: 10px;
             }
         </style>
     </head>
@@ -1341,7 +1382,17 @@
         <section class="have-any-questions">
             <div class="have-any-questions-container">
                 <h2 class="have-any-questions-title">Напишіть нам</h2>
+                <div class="sec-line"></div>
                 <p class="subtitle-text">Ви можете скористатися нашими послугами, написавши нам або зателефонувавши нам. Ми з радістю відповімо на будь-які питання і допоможемо замовити послуги!</p>
+                <div class="have-any-questions-contactform">
+                    <form class="contact-form" action="">
+                        <input class="contact-form-input" type="text" placeholder="Введіть своє ім'я" required="required">
+                        <input class="contact-form-input" name="phone" placeholder="Введіть свій номер телефону" required="required">
+                        <input class="contact-form-input" type="email" placeholder="Адреса електронної пошти" required="required">
+                        <textarea name="message" id="message" placeholder="Ваше повідомлення"></textarea>
+                        <button class="button-contact-form">Надішліть повідомлення</button>
+                    </form>
+                </div>
             </div>
         </section>
     </body>
