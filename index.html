@@ -132,6 +132,64 @@
                font-size: 17px;
                 width: 80%;
             }
+            /*-------------------*/
+            .the-dream-team{
+                padding: 80px 0;
+            }
+            .the-dream-team-container{
+                max-width: 1310px;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0 auto;
+            }
+            .the-dream-team-title{
+                margin-bottom: 50px;
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
+                position: relative;
+            }
+            .the-dream-team-title::before{
+                content: "";
+                width: 60px;
+                height: 2px;
+                background-color: #0349e6;
+                display: inline-block;
+                top: 20px;
+                position: absolute;
+                left: 400px;
+            }
+            .the-dream-team-box{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .the-dream-team-item{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                background-color: #ededf0;
+                text-align: center;
+                padding: 40px 20px;
+                transition: all 0.3s ease-in-out;
+            }
+            .the-dream-team-item:hover{
+                background-color: #ef0f3a;
+            }
+            .the-dream-team-picture{
+                width: 150px;
+                height: 150px;
+                margin: 0 auto 22px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .the-dream-team-picture img{
+                transition: all 0.3s ease-in-out;
+            }
         </style>
     </head>
     <body>
@@ -170,6 +228,18 @@
                             <div class="showcase-style-content">
                                 <p>Вам потрібні топ-менеджери і швидка комунікація</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="the-dream-team">
+            <div class="the-dream-team-container">
+                <h2 class="the-dream-team-title">Наша команда </h2>
+                <div class="the-dream-team-box">
+                    <div class="the-dream-team-item">
+                        <div class="the-dream-team-picture">
+                            <img src="images/avatar/m-3.jpg" alt="avatar">
                         </div>
                     </div>
                 </div>
