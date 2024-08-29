@@ -41,20 +41,139 @@
             img {
                 max-width: 100%;
             }
-           .trusted-collaborators{
-                background-color: #eece38;
+           .showcase-your-strengths{
+                background-image: url(images/bg/3_bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
                 padding: 80px 0;
             }
-            .trusted-collaborators-container{
+            .showcase-your-strengths-container{
                 max-width: 1310px;
                 width: 100%;
                 padding: 0 16px;
                 margin: 0 auto;
             }
-            
+            .showcase-your-strengths-title{
+                margin-bottom: 50px;
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
+                color: #fff;
+            }
+            .showcase-your-strengths-box{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 30px;
+            }
+            .showcase-your-strengths-list{
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                gap: 30px;
+            }
+            .showcase-style{
+                background-color: #f0f0f4;
+                position: relative;
+                display: flex;
+                gap: 10px;
+                padding: 20px;
+                transition: all 0.3s ease-in-out;
+                align-items: center;
+            }
+            .showcase-style:hover{
+                background-color: #0247df;
+                transition: all 0.3s ease-in-out;
+            }
+            .showcase-style:hover .showcase-style-icon{
+                background-color: #011339;
+                transition: all 0.3s ease-in-out;
+            }
+            .showcase-style:hover .showcase-style-content{
+                color: #fbf6f6;
+                transition: all 0.3s ease-in-out;
+            }
+            .showcase-style:hover .showcase-style-number{
+                background-color: #f9f6f6;
+                color: #011239;
+            }
+            .showcase-style-number{
+                position: absolute;
+                right: 0;
+                top: 0;
+                min-width: 50px;
+                min-height: 50px;
+                background-color: #0248e3;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: #fdf9f9;
+                font-size: 24px;
+                transition: all 0.3s ease-in-out;
+            }
+            .showcase-style-icon{
+                width: 70px;
+                height: 70px;
+                background-color: #0147e3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease-in-out;
+                
+            }
+            .showcase-style-icon img{
+                width: 100%;
+                height: 70px;           
+            }
+            .showcase-style-content{
+               font-size: 17px;
+                width: 80%;
+            }
         </style>
     </head>
     <body>
-	    
+	    <section class="showcase-your-strengths">
+            <div class="showcase-your-strengths-container">
+                <h2 class="showcase-your-strengths-title">Кілька причин, чому ви звернули увагу на наш сайт:</h2>
+                <div class="showcase-your-strengths-box">
+                    <div class="showcase-your-strengths-list">
+                        <div class="showcase-style">
+                            <span class="showcase-style-number">01</span>
+                            <div class="showcase-style-icon">
+                                <img src="images/icon/7.svg" alt="strengths">
+                            </div>
+                            <div class="showcase-style-content">
+                                <p>Ви розглядаєте можливість придбання ваших послуг</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-your-strengths-list">
+                        <div class="showcase-style">
+                            <span class="showcase-style-number">02</span>
+                            <div class="showcase-style-icon">
+                                <img src="images/icon/7.svg" alt="strengths">
+                            </div>
+                            <div class="showcase-style-content">
+                                <p>Вам важливо отримати максимальну ефективність від вкладених коштів, щоб кожна витрачена копійка приносила максимальну користь</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-your-strengths-list">
+                        <div class="showcase-style">
+                            <span class="showcase-style-number">03</span>
+                            <div class="showcase-style-icon">
+                                <img src="images/icon/7.svg" alt="strengths">
+                            </div>
+                            <div class="showcase-style-content">
+                                <p>Вам потрібні топ-менеджери і швидка комунікація</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
