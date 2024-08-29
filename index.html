@@ -180,14 +180,34 @@
             .the-dream-team-item:hover{
                 background-color: #ef0f3a;
             }
+            .the-dream-team-item:hover .the-dream-picture-name,
+            .the-dream-team-item:hover .the-dream-picture-name-sec{
+                color: #f9f5f5;
+            }
             .the-dream-team-picture{
-                width: 150px;
-                height: 150px;
+                width: 100%;
+                height: auto;
                 margin: 0 auto 22px;
                 border-radius: 50%;
                 overflow: hidden;
             }
             .the-dream-team-picture img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: contain;
+            }
+            .the-dream-picture-name{
+                font-size: 24px;
+                line-height: 141.666667%; /* 34/24 */
+                margin-bottom: 5px;
+            }
+            .the-dream-picture-name-sec{
+                font-size: 16px;
+                font-weight: 500;
+                color: #0349e3;
+                display: block;
+                margin-bottom: 23px;
                 transition: all 0.3s ease-in-out;
             }
         </style>
@@ -241,6 +261,8 @@
                         <div class="the-dream-team-picture">
                             <img src="images/avatar/m-3.jpg" alt="avatar">
                         </div>
+                        <div class="the-dream-picture-name">Никита Михайлов</div>
+                        <span class="the-dream-picture-name-sec">Менеджер з розвитку бізнесу</span>
                     </div>
                 </div>
             </div>
