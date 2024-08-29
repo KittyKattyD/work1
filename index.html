@@ -220,6 +220,91 @@
             .user-evaluations{
                 padding: 80px 0;
             }
+            .user-evaluations-container{
+                max-width: 1310px;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0 auto;
+            }
+            .user-evaluations-title{
+                margin-bottom: 50px;
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
+                color: #f0103b;
+                position: relative;
+            }
+            .user-evaluations-title::before{
+                background-color: #0246dd;
+                content: "";
+                width: 60px;
+                height: 2px;
+                position: absolute;
+                top: 20px;
+                left: 450px;
+            }
+            .user-evaluations-title::after{
+                background-color: #0246dd;
+                content: "";
+                width: 60px;
+                height: 2px;
+                position: absolute;
+                top: 20px;
+                right: 450px;
+            }
+            .user-evaluations-wrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+            }
+            .user-evaluations-list{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                width: 45%;
+            }
+            .user-evaluations-list-image{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .user-evaluations-list-image img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .user-evaluations-list-content{
+                /* width: 60%; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                position: relative;
+            }
+            .user-evaluations-raiting{
+                display: flex;
+                align-items: center;
+                color: #ef0f3a;
+                margin-bottom: 18px;
+                gap: 5px;
+            }
+            .user-evaluations-text{
+                font-size: 22px;
+                line-height: 163.636364%; /* 36/22 */
+                margin-bottom: 20px;
+                color: #01133c;
+            }
+            .user-evaluations-name{
+                color: #0246dd;
+            }
+            .user-evaluations-quote{
+                position: absolute;
+            }
         </style>
     </head>
     <body>
@@ -301,6 +386,35 @@
         <section class="user-evaluations">
             <div class="user-evaluations-container">
                 <h2 class="user-evaluations-title">Коменты</h2>
+                <div class="user-evaluations-wrapper">
+                    <div class="user-evaluations-list">
+                        <div class="user-evaluations-list-image">
+                            <img src="images/avatar/w-0.jpg" alt="picture">
+                        </div>
+                        <div class="user-evaluations-list-content">
+                            <div class="user-evaluations-raiting">
+
+                            </div>
+                            <div class="user-evaluations-text">Цю компанію обов'язково варто спробувати через їх клієнтоорієнтованого підходу і високої якості послуг</div>
+                            <div class="user-evaluations-name">Ксения Назарова</div>
+                            <div class="user-evaluations-quote">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-evaluations-list">
+                        <div class="user-evaluations-list-image">
+                            <img src="images/avatar/m-1.jpg" alt="picture">
+                        </div>
+                        <div class="user-evaluations-list-content">
+                            <div class="user-evaluations-raiting">
+
+                            </div>
+                            <div class="user-evaluations-text">Я більш ніж задоволений. Ця компанія є чудовим вибором для бізнесу з привітним персоналом та ефективним обслуговуванням</div>
+                            <div class="user-evaluations-name">Адам Денисов</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
