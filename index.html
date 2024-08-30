@@ -625,6 +625,10 @@
         }
             .our-approach-to-work{
                 padding: 80px 0;
+                background-image: url(images/bg/3_bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
             }
             .our-approach-to-work-container{
                 max-width: 1310px;
@@ -658,7 +662,74 @@
                 top: 20px;
                 right: 400px;
             }
-            
+            .our-approach-to-work-wrapper{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .our-approach-to-work-box {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                background: #fff;
+                padding: 30px 25px 25px;
+                width: 25%;
+            }
+            .our-approach-to-work-box:hover .our-approach-to-work-content{
+                color: #0146df;
+            }
+            .our-approach-to-work-box:hover .box-icon-number{
+                background-color: #0147e3;
+            }
+            .our-approach-to-work-box:hover .our-approach-to-work-box-icon{
+                background-color: #ec0e38;
+            }
+            .our-approach-to-work-box:hover .our-approach-to-work-box-icon img{
+                transform: rotateY(180deg);
+                transition: all 0.3s ease-in-out;
+            }
+            .our-approach-to-work-box-icon{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                width: 100px;
+                background-color: #0246dd;
+                border-radius: 50%;
+                margin-bottom: 15px;
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                left: 70px;
+            }
+            .our-approach-to-work-box-icon img{
+                width: 70px;
+                height: 70px;
+                transition: all 0.3s ease-in-out;
+            }
+            .box-icon-number{
+                position: absolute;
+                top: 0px;
+                right: -15px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #011237;
+                font-size: 15px;
+                font-weight: 400;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 2px solid #0147e3;
+                transition: all 0.3s ease-in-out 0s;
+            }
+            .our-approach-to-work-content{
+                text-align: center;
+                font-size: 15px;
+            }
         </style>
     </head>
     <body>
@@ -955,6 +1026,17 @@
         <section class="our-approach-to-work">
             <div class="our-approach-to-work-container">
                 <h2 class="our-approach-to-work-title">Наші переваги</h2>
+                <div class="our-approach-to-work-wrapper">
+                    <div class="our-approach-to-work-box">
+                        <div class="our-approach-to-work-box-icon">
+                            <img src="images/icon/6.svg" alt="preference">
+                            <span class="box-icon-number">01</span>
+                        </div>
+                        <div class="our-approach-to-work-content">
+                            <p>Ми активно розвиваємося і розширюємо наші пропозиції, віддаючи пріоритет динамічному розвитку</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
