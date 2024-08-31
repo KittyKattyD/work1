@@ -41,6 +41,57 @@
             img {
                 max-width: 100%;
             }
+            .welcom-area-container{
+                max-width: 1310px;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0 auto;
+            }
+            .welcom-area-menu-top{
+                /* position: relative;
+                z-index: 9;   */
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+            .menu-top-left{
+                width: 20%;
+                padding: 24px 30px 24px 0;
+                height: 110px;
+                /* position: relative;
+                z-index: 1; */
+                background-color: #fff;
+            }
+            .menu-top-center{
+                background-color: #0046e2;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: #fff;
+            }
+            .main-menu{
+                padding-left: 15px;
+                font-size: 24px;
+            }
+            .main-menu-items{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                justify-content: space-between;
+            }
+            .main-menu-list{
+                list-style-type: none;
+                display: inline-block;
+            }
+            .menu-top-right{
+                background-color: #0046e2;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: #fff;
+            }
            .showcase-your-strengths{
                 background-image: url(images/bg/3_bg.jpg);
                 background-repeat: no-repeat;
@@ -773,6 +824,38 @@
         </style>
     </head>
     <body>
+        <header>
+            <div class="welcom-area-container">
+                <div class="welcom-area-menu-top">
+                    <div class="menu-top-left">
+                        <a href="">
+                            <img src="" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu-top-center">
+                        <nav class="main-menu">
+                            <ul class="main-menu-items">
+                                <li class="main-menu-list">
+                                    <a href="">Дім</a>
+                                </li>
+                                <li class="main-menu-list">
+                                    <a href="">Послуги</a>
+                                </li>
+                                <li class="main-menu-list">
+                                    <a href="">Про нас</a>
+                                </li>
+                                <li class="main-menu-list">
+                                    <a href="">Напишіть нам</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu-top-right">
+
+                    </div>
+                </div>
+            </div>
+        </header>
 	    <section class="showcase-your-strengths">
             <div class="showcase-your-strengths-container">
                 <h2 class="showcase-your-strengths-title">Кілька причин, чому ви звернули увагу на наш сайт:</h2>
