@@ -730,6 +730,46 @@
                 text-align: center;
                 font-size: 15px;
             }
+            /*--------------------*/
+            .the-partner-network {
+                padding: 80px 0;
+                background-image: url(images/bg/3_bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                position: relative;
+                z-index: 1;
+            }
+            .the-partner-network-overlay {
+                opacity: 0.85;
+                background-color: #0046e2;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+            }
+            .the-partner-network-container {
+                max-width: 1310px;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0 auto;
+            }
+            .the-partner-network-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+            .the-partner-network-wrapper img:hover {
+                background-color: #ec0e38;
+                opacity: 0.5;
+                padding: 15px;
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+            }
         </style>
     </head>
     <body>
@@ -1063,6 +1103,19 @@
                             <p>Ми з гордістю обслуговуємо галузь з 2012 року</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="the-partner-network">
+            <div class="the-partner-network-overlay"></div>
+            <div class="the-partner-network-container">
+                <div class="the-partner-network-wrapper">
+                    <img src="images/partners/0_part.png" alt="partner">
+                    <img src="images/partners/1_part.png" alt="partner">
+                    <img src="images/partners/2_part.png" alt="partner">
+                    <img src="images/partners/3_part.png" alt="partner">
+                    <img src="images/partners/4_part.png" alt="partner">
+                    <img src="images/partners/5_part.png" alt="partner">
                 </div>
             </div>
         </section>
