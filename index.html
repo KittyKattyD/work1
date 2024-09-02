@@ -41,6 +41,9 @@
             img {
                 max-width: 100%;
             }
+            .welcom-area{
+                padding-bottom: 80px;
+            }
             .welcom-area-container{
                 max-width: 1310px;
                 width: 100%;
@@ -112,11 +115,42 @@
                 height: 30px;
             }
             .menu-top-background{
-                padding-bottom: 80px;
+                padding: 150px 0;
+                background-image: url(images/bg/4.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+
             }
+            .menu-top-background-text{
+                font-size: 40px;
+                font-weight: 600;
+                color: #fff;
+                margin: 0 25px 40px 25px;
+                line-height: 1.2;
+            }
+            .header-button{
+                display: flex;
+                justify-content: center;
+            }
+            .header-btn{
+                padding: 12px 30px;
+                background-color: #0246dd;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: capitalize;
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+                clip-path: polygon(140% 0, 100% 65%, 95% 100%, 0 100%, 0 0);
+            }
+            .header-button:hover .header-btn{
+                background-color: #f4123d;
+                transition: all ease 0.5s;
+            }
+            /*---------------------*/
            .showcase-your-strengths{
                 background-image: url(images/bg/3_bg.jpg);
                 background-repeat: no-repeat;
@@ -849,7 +883,7 @@
         </style>
     </head>
     <body>
-        <header>
+        <header class="welcom-area">
             <div class="welcom-area-container">
                 <div class="welcom-area-menu-top">
                     <div class="menu-top-left">
@@ -892,7 +926,10 @@
                 </div>
             </div>
             <div class="menu-top-background">
-                <img src="images/bg/3_bg.jpg" alt="">
+                <div class="menu-top-background-text">Доброго дня та теплого вітання до CompanyName! Ми раді, що Ви з нами. Тут, у CompanyName, ми поєднуємо передові технології та інноваційні ідеї, щоб запропонувати вам не просто рішення, а новий погляд на те, що ви можете зробити.</div>
+                <div class="header-button">
+                    <a href="" class="header-btn">Отримати консультацію</a>
+                </div>
             </div>
         </header>
 	    <section class="showcase-your-strengths">
