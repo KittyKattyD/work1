@@ -952,6 +952,100 @@
                 transition: all 0.3s ease-in-out;
             }
             /*----------------*/
+            .box-propositions{
+                padding: 80px 0;
+            }
+            .box-propositions-container {
+                max-width: 1310px;
+                width: 100%;
+                padding: 0 16px;
+                margin: 0 auto;
+            }
+            .propositions-title {
+                margin-bottom: 50px;
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
+                color: #ec0e38;
+            }
+            .box-propositions-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+            }
+            .box-propositions-list{
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .box-propositions-list:hover .propositions-btn,
+            .box-propositions-list:hover .box-propositions-price-block-header{
+                background-color: #ec0e38;
+            }
+            .box-propositions-price-block-header{
+                background-color: #0046e2;
+                text-align: center;
+                position: relative;
+                min-height: 227px;
+                padding-top: 40px;
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+            .price-block-header-title{
+                font-size: 30px;
+                margin-bottom: 10px;
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+            }
+            .price-block-header-price{
+                font-size: 48px;
+                line-height: 58px;
+                font-weight: 700;
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+            }
+            .box-propositions-price-block-body{
+                background-color: #fff;
+                margin: 0 40px;
+                padding: 40px 35px;
+                margin-top: -52px;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+                z-index: 1;
+                position: relative;
+                text-align: center;
+            }
+            .price-block-list{
+                list-style: none;
+                margin-bottom: 0;
+                padding: 25px 0 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .price-list-items{
+                display: inline-flex;
+                align-items: center;
+                font-size: 15px;
+                gap: 10px;
+                text-align: left;
+                font-weight: 500;
+            }
+            .propositions-btn{
+                background-color: #01133c;
+                width: 100%;
+                justify-content: center;
+                display: inline-flex;
+                text-transform: capitalize;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 17px 30px;
+                clip-path: polygon(140% 0, 100% 65%, 95% 100%, 0 100%, 0 0);
+            }
+            /*----------------*/
             .endnote{
                 padding: 80px 0 0 0;
             }
@@ -1455,7 +1549,70 @@
                 </div>
             </div>
         </section>
-        
+        <section class="box-propositions">
+            <div class="box-propositions-container">
+                <h2 class="propositions-title">Ми працюємо для того, щоб ви перевершили свої очікування</h2>
+                <div class="box-propositions-wrapper">
+                    <div class="box-propositions-list">
+                        <div class="box-propositions-price-block">
+                            <div class="box-propositions-price-block-header">
+                                <h3 class="price-block-header-title">Базовий тариф</h3>
+                                <span class="price-block-header-price">Ціна: 1107 грн</span>
+                            </div>
+                            <div class="box-propositions-price-block-body">
+                                <ul class="price-block-list">
+                                    <li class="price-list-items">Доступ до основного контенту сайту</li>
+                                    <li class="price-list-items">Стандартна підтримка клієнтів</li>
+                                    <li class="price-list-items">Щомісячна підписка на розсилку</li>
+                                    <li class="price-list-items">Можливість брати участь у відкритих форумах та дискусіях</li>
+                                </ul>
+                                <a href="" class="propositions-btn">Отримати консультацію</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-propositions-list">
+                        <div class="box-propositions-price-block">
+                            <div class="box-propositions-price-block-header">
+                                <h3 class="price-block-header-title">Розширений тариф</h3>
+                                <span class="price-block-header-price">Ціна: 2214 грн</span>
+                            </div>
+                            <div class="box-propositions-price-block-body">
+                                <ul class="price-block-list">
+                                    <li class="price-list-items">Все, що включено в попередній тариф, плюс:</li>
+                                    <li class="price-list-items">Доступ до ексклюзивних вебінарів або онлайн-заходів</li>
+                                    <li class="price-list-items">Можливість участі в закритих групах та дискусіях</li>
+                                    <li class="price-list-items">Пріоритетна підтримка електронною поштою або месенджерами</li>
+                                    <li class="price-list-items">Необмежена кількість завантажень або доступ до ресурсів</li>
+                                    <li class="price-list-items">Стандартна документація та посібники користувача</li>
+                                </ul>
+                                <a href="" class="propositions-btn">Отримати консультацію</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-propositions-list">
+                        <div class="box-propositions-price-block">
+                            <div class="box-propositions-price-block-header">
+                                <h3 class="price-block-header-title">Преміальний тариф</h3>
+                                <span class="price-block-header-price">Ціна: 4428 грн</span>
+                            </div>
+                            <div class="box-propositions-price-block-body">
+                                <ul class="price-block-list">
+                                    <li class="price-list-items">Все, що включено в попередні тарифи, плюс:</li>
+                                    <li class="price-list-items">Розширено доступ до ексклюзивних функцій і нових функцій продуктів або послуг</li>
+                                    <li class="price-list-items">Щотижневі персональні консультації</li>
+                                    <li class="price-list-items">Виділене управління обліковим записом</li>
+                                    <li class="price-list-items">Ексклюзивні переваги</li>
+                                    <li class="price-list-items">Персоналізовані рекомендації та курси</li>
+                                    <li class="price-list-items">Можливість впливати на розробку продукту або безпосередню участь в тестуванні нових функцій</li>
+                                    <li class="price-list-items">Індивідуальний менеджер або консультант для Вашої компанії</li>
+                                </ul>
+                                <a href="" class="propositions-btn">Отримати консультацію</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="endnote">
             <div class="endnote-container">
                 <div class="endnote-box-top">
